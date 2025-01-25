@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="/home/rgukt/Typing speed.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+        <div id="text-to-type">
+            <p>Type the text below as quickly as you can:</p>
+            <p id="text-sample">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+        
+        <textarea id="typed-text" placeholder="Start typing here..." oninput="checkTyping()"></textarea>
+        
+        <div id="result">
+            <p>Time: <span id="time">0</span> seconds</p>
+            <p>Speed: <span id="wpm">0</span> WPM</p>
+            <p>Accuracy: <span id="accuracy">0</span>%</p>
+        </div>
+        
+        <button id="start-btn" onclick="startTest()">Start Test</button>
+    </div>
+
+    <script src="/home/rgukt/Typing  Speed.js"></script>
+</body>
+</html>
+
